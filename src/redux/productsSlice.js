@@ -7,7 +7,7 @@ const productsSlice = createSlice({
   initialState,
   reducers: {
     addProduct: (state, action) => {
-      console.log('Product added:', action.payload); // Debugging statement
+      console.log('Product added:', action.payload);
       state.push(action.payload);
     },
     updateProduct: (state, action) => {
