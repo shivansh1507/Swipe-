@@ -1,8 +1,10 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
+
+const initialState = [];
 
 const invoicesSlice = createSlice({
-  name: "invoices",
-  initialState: [],
+  name: 'invoices',
+  initialState,
   reducers: {
     addInvoice: (state, action) => {
       state.push(action.payload);
@@ -21,12 +23,6 @@ const invoicesSlice = createSlice({
   },
 });
 
-export const {
-  addInvoice,
-  deleteInvoice,
-  updateInvoice,
-} = invoicesSlice.actions;
-
+export const { addInvoice, deleteInvoice, updateInvoice } = invoicesSlice.actions;
 export const selectInvoiceList = (state) => state.invoices;
-
 export default invoicesSlice.reducer;

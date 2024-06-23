@@ -17,7 +17,7 @@ const InvoiceList = () => {
   const handleCopyClick = () => {
     const invoice = getOneInvoice(copyId);
     if (!invoice) {
-      alert("Please enter the valid invoice id.");
+      alert("Please enter a valid invoice ID.");
     } else {
       navigate(`/create/${copyId}`);
     }

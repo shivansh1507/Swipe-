@@ -7,10 +7,17 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "assert": "^2.1.0",
+    "axios": "^1.7.2",
     "bootstrap": "^5.1.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "dotenv": "^16.4.5",
     "file-saver": "^2.0.5",
     "html2canvas": "^1.4.1",
+    "https-browserify": "^1.0.0",
     "jspdf": "^2.3.1",
+    "process": "^0.11.10",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-beta.6",
     "react-dom": "^17.0.2",
@@ -19,12 +26,16 @@
     "react-router-dom": "^6.10.0",
     "react-scripts": "^5.0.1",
     "redux": "^4.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.3",
+    "util": "^0.12.5",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -47,5 +58,9 @@
   },
   "engines": {
     "node": "14.15.0"
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "react-app-rewired": "^2.2.1"
   }
 }

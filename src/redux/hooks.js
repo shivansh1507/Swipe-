@@ -1,8 +1,8 @@
-import { useSelector } from "react-redux";
-import { selectInvoiceList } from "./invoicesSlice";
+import { useSelector } from 'react-redux';
+import { selectInvoiceList } from './invoicesSlice';
 
 export const useInvoiceListData = () => {
-  const invoiceList = useSelector(selectInvoiceList);
+  const invoiceList = useSelector(selectInvoiceList) || [];
 
   const getOneInvoice = (receivedId) => {
     return (
